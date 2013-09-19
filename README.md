@@ -5,6 +5,8 @@ Maps key combinations to event names used by the event aggregator of your choice
 
 #How to Use
 
+By default, Backbone.Commander uses App.vent with the method "trigger" for firing events.
+
 ######When your App is initialized
 ```javascript
 
@@ -21,9 +23,6 @@ new Backbone.Commander(eventMap);
 ```javascript
 this.bindTo(App.vent, "eventName:one", this.function, this);
 ```
-
-By default, Backbone.Commander uses App.vent with the method "trigger" for firing events.
-
 
 ######With a custom event aggregator
 ```javascript
